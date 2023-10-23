@@ -298,10 +298,7 @@ void ATank::ReceiveDamage(float IncomingDamage, EDamageType DamageType)
 
 void ATank::TankDie_Implementation(EDamageType DamageType)
 {
-	if (APlayerController* PC = Cast<APlayerController>(GetController()))
-	{
-		PC->RestartLevel();
-	}
+	
 }
 
 void ATank::LevelUp_Implementation()
